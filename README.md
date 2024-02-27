@@ -7,16 +7,16 @@ List Friends, List Pending Friend Requests.
 This project consist of REST APIs for Social Networking Application. The API's are Authenticated using Django 
 Rest Framework Authentication. 
 * User Login/Signup
-    a) Users can login with their email and password.
-    b) User can signup with their email and username.
-    c) Except signup and login every api can be called for authenticated users only.
+    1. Users can login with their email and password.
+    2. User can signup with their email and username.
+    3. Except signup and login every api can be called for authenticated users only.
 * API to search other users by email and name(paginate up to 10 records per page).
-    a) If search keyword matches exact email then return user associated with the email.
-    b) If the search keyword contains any part of the name then return a list of all users.
-        eg:- Amarendra, Amar, aman, Abhirama are three users and if users search with "am"
+    1. If search keyword matches exact email then return user associated with the email.
+    2. If the search keyword contains any part of the name then return a list of all users.
+        * i.e. Amarendra, Amar, aman, Abhirama are three users and if users search with "am"
             then all of these users should be shown in the search result because "am"
             substring is part of all of these names.
-    c) There will be only one search keyword that will search either by name or email.
+    3. There will be only one search keyword that will search either by name or email.
 * API to send/accept/reject friend request
 * API to list friends(list of users who have accepted friend request)
 * List pending friend requests(received friend request)
